@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DECK OF CARDS</title>
+    </head>
+    <body>
+        <h2>DECK OF CARDS</h2>
+        <p id ="demo"></p>
+        <p id ="demo1"></p>
+        <p id ="demo2"></p>
+       
+    <script>
+            function Card(value,suit){
+                
+                this.values=value;
+                this.suits=suit;
+            };
+
+           
+            const aceOfSpades = new Card(1, 'spades');
+          const tenOfHearts = new Card(10, 'hearts');
+           const kingOfDiamonds = new Card(13, 'diamonds');
+  
+              
+
+
+           document.getElementById("demo").innerHTML= "Number of spade is"+ aceOfSpades.values ;
+
+           document.getElementById("demo1").innerHTML= "Number of heart is"+ tenOfHearts.values ;
+
+           document.getElementById("demo2").innerHTML= "Number of king of diamonds is"+ kingOfDiamonds.values ;
+           </script>
+           </body>
+           </html>
+  
